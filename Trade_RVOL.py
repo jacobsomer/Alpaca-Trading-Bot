@@ -20,7 +20,7 @@ class Strategy():
         d = datetime.utcnow()
         unixtime = calendar.timegm(d.utctimetuple())
         list=[]
-        for i in range(0,7):
+        for i in range(0,7):   #change value of n as describet in tutorial by changing 7. Be carefull,  Alpaca only allows 200 request per minute. 
             tz = pytz.timezone('America/New_York')
             time2=datetime.fromtimestamp(unixtime-60*10, tz).isoformat()
             time3=datetime.fromtimestamp(unixtime+60*10, tz).isoformat()
@@ -69,7 +69,7 @@ class Strategy():
                 else:
                     print("Hold "+i)
             self.get_trading_hours()
-            time.sleep(30)
+            time.sleep(30)   # Alpaca only allows 200 request per minute so we must wait a little before we make more API calls. 
 
     def create_order(self, symbol, qty, side, type='market', time_in_force='gtc'):
         data={
@@ -171,8 +171,8 @@ class Strategy():
 
 if __name__ == "__main__":
 
-    API_KEY='PKVUR5C4ZNP7GPS645CS'
-    Secret_Key='7w5xScJchNwSAbwNSWL8H7ErJhfg9Qz2AmiNbH9E'
-    stock_array=['AAPL', 'NVDA', 'AMZN',  'TSLA', 'NVAX', 'MRNA', 'FB',  'DKS', 'AAL', 'W', 'CHWY', 'PLAY', 'SAVE', 'CAKE', 'ANF', 'SHAK', 'AAPN', 'DKS', 'BIG', 'GOOGL', 'CCL', 'FSLY', 'WKHS', 'OSTK', 'TUP', 'ZM', 'FTCH', 'BJ', 'FSLR']
+    API_KEY='{API Key goes Here}'
+    Secret_Key='{Secret Key goes Here}'
+    stock_array= [] # Example: ['AAPL', 'NVDA', 'AMZN',  'TSLA', 'NVAX', 'MRNA', 'FB',  'DKS', 'AAL', 'W', 'CHWY', 'PLAY', 'SAVE', 'CAKE', 'ANF', 'SHAK', 'AAPN', 'DKS', 'BIG', 'GOOGL', 'CCL', 'FSLY', 'WKHS', 'OSTK', 'TUP', 'ZM', 'FTCH', 'BJ', 'FSLR']
     My_Strategy=Strategy(Secret_Key,API_KEY,stock_array)
     My_Strategy.run()
