@@ -48,4 +48,6 @@ import calendar
     ```Hold TSLA ```<br />
     ```Sold 12 shares of FB ```<br />
     ```... ```
-  #### Step 5: Check your Alpaca dashboard 
+  #### Step 5: Check your Alpaca dashboard and review your gains! 
+  
+  ![](https://github.com/jacobsomer/Alpaca-Trading-Bot/blob/master/Screenshot%20(6).png)
