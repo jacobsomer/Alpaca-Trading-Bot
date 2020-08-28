@@ -49,6 +49,6 @@ import calendar
     ```Sold 12 shares of FB ```<br />
     ```... ```
   #### Step 5: Check your Alpaca dashboard and review your gains!
-  Note: This image displays paper trading gains i.e. not real money. Simply change the api_key and secret_key if you want to trade on your real account. 
+  Note: This image displays paper trading gains i.e. not real money. Simply change the api key and secret key if you want to trade on your real account. 
   
   ![](https://github.com/jacobsomer/Alpaca-Trading-Bot/blob/master/Screenshot%20(6).png)
