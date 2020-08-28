@@ -57,7 +57,7 @@ class Strategy():
     def run(self):
 
         self.get_trading_hours()
-        if trading_hours==False:
+        if self.trading_hours==False:
             return print("Error: Cannot Trade. Reason: Outside 9-4pm est trading window")
         while self.trading_hours:
             for i in self.stocks:
