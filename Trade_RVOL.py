@@ -20,7 +20,7 @@ class Strategy():
         d = datetime.utcnow()
         unixtime = calendar.timegm(d.utctimetuple())
         list=[]
-        for i in range(0,7):   #change value of n as describet in tutorial by changing 7. Be carefull,  Alpaca only allows 200 request per minute. 
+        for i in range(0,7):   #change value of n as described in tutorial by changing 7. Be carefull,  Alpaca only allows 200 API calls per minute. 
             tz = pytz.timezone('America/New_York')
             time2=datetime.fromtimestamp(unixtime-60*10, tz).isoformat()
             time3=datetime.fromtimestamp(unixtime+60*10, tz).isoformat()
