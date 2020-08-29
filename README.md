@@ -1,5 +1,5 @@
 # Alpaca-Trading-Bot
-Alpaca is a sillicon valley based brokerage that focuses on algorithmic trading through its simple, easy-to-use API. The code in Trady_RVOL.py is for a Trading bot for the NYSE using Alpaca API. Please scroll down to the bottom for a quick tutorial. 
+Alpaca is a sillicon valley based brokerage that focuses on algorithmic trading through its simple, easy-to-use API. The code in Trady_RVOL.py is for a Trading bot for the NYSE using Alpaca API. Please scroll down for a quick tutorial. 
 ## Strategy Explanation
 This stock market strategy is derived from a simple volume based strategy. For each stock, we collect the volume at a given time for the past n (n can be changed under the calc_screen() function) trading days and append it to a list. For example: if today is friday at 10AM, our stock is TSLA, and n=4, our list will comprise of TSLA's volume at 10am on the previous monday, teusday, wednesday, and thursday. If the current volume is in the top 25% of volume in that list, we buy. If current volume is in the bottom 25%, we sell. Else, we hold. This code will continually run locally until trading hours are over. Feel free to look at the code and make changes as you wish. Thank you, and good luck trading!
 
