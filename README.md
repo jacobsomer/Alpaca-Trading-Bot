@@ -36,7 +36,7 @@ import calendar
     My_Strategy.run()
  ```
  #### Step 4: Open terminal and run Trade.py in the folder in which you downloaded it. 
- This is how it looks when I run it in powershell in C#. <br />
+ This is how it looks when I run it in powershell. <br />
     ```C#
     PS C:\Users\somer> cd OneDrive\Documents\Atom_Projects\Buy_Low_Sell_High
     PS C:\Users\somer\OneDrive\Documents\Atom_Projects\Buy_Low_Sell_High> python Trade_RVOL.py  
